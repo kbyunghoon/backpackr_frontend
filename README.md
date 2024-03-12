@@ -6,6 +6,7 @@ yarn dev
 ```
 
 # 카드 UI
+<img width="772" alt="image" src="https://github.com/kbyunghoon/backpackr_frontend/assets/79817983/eec21a86-a298-4023-8ba0-1cd6e31941dc">
 
 ```javascript
 // mock/index.ts
@@ -30,6 +31,7 @@ export const CardImage = styled.div`
 ```
 
 # 입력폼 UI
+<img width="837" alt="image" src="https://github.com/kbyunghoon/backpackr_frontend/assets/79817983/aebcf3a2-b526-4088-9eac-dc991d119e10">
 
 ```javascript
 // InputForm.tsx
