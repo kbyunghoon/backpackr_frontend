@@ -23,7 +23,8 @@ export const CardImage = styled.div`
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
-  min-width: 200px;
+  width: 200px;
+  height: 200px;
 
   & > img {
     width: 100%;
