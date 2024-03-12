@@ -25,7 +25,10 @@ const App = () => {
   return (
     <div>
       <CardInformationContext.Provider
-        value={{ cardInformation, handleInformation }}
+        value={{
+          cardInformation,
+          handleInformation,
+        }}
       >
         <CardWrapper>
           <VerticalCard {...cardInformation} />

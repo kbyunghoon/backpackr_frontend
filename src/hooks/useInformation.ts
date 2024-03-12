@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import ReactSvg from "../assets/react.svg";
+import { MOCK_LIST_DATA } from "../mock";
 import { ICardInformation } from "../types/common";
 
 type TOption = {
@@ -13,13 +13,6 @@ interface ICardInformationContext {
 }
 
 export const CardInformationContext = createContext<ICardInformationContext>({
-  cardInformation: {
-    image: ReactSvg,
-    label: "Card Label",
-    title: "Card Title",
-    rating: "3",
-    description: "description",
-    userName: "이름",
-  },
+  cardInformation: MOCK_LIST_DATA,
   handleInformation: (arg) => {},
 });
