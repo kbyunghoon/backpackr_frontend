@@ -33,21 +33,24 @@ const InputBox: React.FC<InputBoxType> = ({
   };
 
   return (
-    <InputBoxContainer>
-      <TextArea
-        type={type}
-        disabled={disabled}
-        placeHoldeer={placeHoldeer}
-        maxLength={maxLength}
-        isReadOnly={isReadOnly}
-        handleValue={handleValue}
-      />
-      {!disabled && !isReadOnly && (
-        <button disabled={clickDisabled} onClick={changeValue}>
-          save
-        </button>
-      )}
-    </InputBoxContainer>
+    <>
+      <h2>{type}</h2>
+      <InputBoxContainer>
+        <TextArea
+          type={type}
+          disabled={disabled}
+          placeHoldeer={placeHoldeer}
+          maxLength={maxLength}
+          isReadOnly={isReadOnly}
+          handleValue={handleValue}
+        />
+        {!disabled && !isReadOnly && (
+          <button disabled={clickDisabled} onClick={changeValue}>
+            save
+          </button>
+        )}
+      </InputBoxContainer>
+    </>
   );
 };
 
